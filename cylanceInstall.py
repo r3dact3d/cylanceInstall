@@ -81,7 +81,7 @@ def installAgent(pkgName, rpmName):
         time.sleep(3)
 
     workingDir = os.mkdir(dirName)
-    get = '/usr/bin/wget --no-check-certificate --no-proxy http://172.21.231.5/pub/%s' % pkgName
+    get = '/usr/bin/wget --no-check-certificate --no-proxy http://###.###.###.###/pub/%s' % pkgName
     getRun = os.popen(get)
     getResult = str(getRun.read())
     extractPkg = '/usr/bin/unzip -d %s %s' % (dirName, pkgName)
